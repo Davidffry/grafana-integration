@@ -54,8 +54,7 @@ else:
     logging.basicConfig(format='%(asctime)s - %(message)s')
 
 # Construct rest url and headers
-url = "{}://{}/RestService/rest.svc/1.0".format(config['SERVERS']['protocol'], 
-                                                config['SERVERS']['rest_server'])
+url = "{%%}://{%%}/RestService/rest.svc/1.0")
 headers = {'ServerHost': config['SERVERS']['datacore_server'],
            'Authorization': 'Basic {} {}'.format(config['CREDENTIALS']['user'],
                                                  config['CREDENTIALS']['passwd'])}

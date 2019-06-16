@@ -1,0 +1,20 @@
+---
+servers:
+  rest_server: rest-ip
+  datacore_server: dcs-ip
+  influxdb_server: 127.0.0.1
+  influxdb_port: 8086
+  protocol: https
+credentials:
+  user: user
+  passwd: pass
+logging:
+  log: no
+  logfile: /var/log/datacore_get_perf.log
+ressources:
+  servers: yes
+  pools: yes
+  virtualdisks: yes
+  physicaldisks: yes
+  ports: yes
+  hosts: yes
